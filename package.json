@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -20,8 +22,32 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "airbnb"
+    ],
+    "rules": {
+      "function-paren-newline": "off",
+      "object-curly-newline": "off",
+      "default-param-last": "off",
+      "semi": [
+        "error",
+        "never"
+      ],
+      "import/prefer-default-export": "off",
+      "react/destructuring-assignment": "off",
+      "react/forbid-prop-types": "off",
+      "react/jsx-filename-extension": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/require-default-props": "off",
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/function-component-definition": [
+        2,
+        {
+          "namedComponents": "arrow-function"
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +60,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4"
   }
 }
